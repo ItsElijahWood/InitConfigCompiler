@@ -27,6 +27,8 @@ return require('packer').startup(function(use)
     
     use 'laytan/cloak.nvim'
 
+     use 'lukas-reineke/indent-blankline.nvim'
+
     use 'nvim-treesitter/nvim-treesitter'
 
     use 'tpope/vim-fugitive'
@@ -41,4 +43,5 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-nvim-lsp'
     use 'L3MON4D3/LuaSnip'
     use 'rafamadriz/friendly-snippets'
+
 end)
