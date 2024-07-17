@@ -20,6 +20,11 @@ return require('packer').startup(function(use)
 	
     use({ 'rose-pine/neovim', as = 'rose-pine' })
 
+    use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+    
     use 'laytan/cloak.nvim'
 
     use 'nvim-treesitter/nvim-treesitter'

@@ -20,7 +20,6 @@ vim.keymap.set('v', '<leader>y', "\"+y") -- Copy to system clipboard
 vim.keymap.set('n', '<leader>x', ':bp<CR>') -- Previous buffer
 vim.keymap.set('n', '<leader>c', ':bn<CR>') -- Next buffer
 
-
 vim.keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz') -- Next quickfix item
 vim.keymap.set('n', '<C-j>', '<cmd>cprev<CR>zz') -- Previous quickfix item
 vim.keymap.set('n', '<leader>k', '<cmd>lnext<CR>zz') -- Next location list item
