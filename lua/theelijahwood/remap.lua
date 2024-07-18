@@ -24,7 +24,19 @@ vim.keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz') -- Next quickfix item
 vim.keymap.set('n', '<C-j>', '<cmd>cprev<CR>zz') -- Previous quickfix item
 vim.keymap.set('n', '<leader>k', '<cmd>lnext<CR>zz') -- Next location list item
 vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz') -- Previous location list
+vim.keymap.set('n', '<C-f>', ':terminal tmux new-session -s mysession<CR>')
+vim.keymap.set('n', '<C-s>', function()
+  vim.fn.system('tmux switch-client -n')
+  vim.cmd('redraw!')
+end)
+
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]) -- Replace word under cursor
 vim.keymap.set("n", "<leader>o", "<cmd>!chmod +x %<CR>", { silent = true }) -- Make file executable
 vim.keymap.set("n", "Q", "<nop>") -- Disable Ex mode
+
+
+vim.keymap.set("n", "<C-h>", "<Left>", { noremap = true })
+vim.keymap.set("n", "<C-j>", "<Down>", { noremap = true })
+vim.keymap.set("n", "<C-k>", "<Up>", { noremap = true })
+vim.keymap.set("n", "<C-l>", "<Right>", { noremap = true })
