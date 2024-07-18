@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
         "mbbill/undotree",
         requires = { "nvim-lua/plenary.nvim" },
     }
+    
+    use 'windwp/nvim-autopairs'
 
     use 'ThePrimeagen/harpoon'
 	
@@ -27,7 +29,7 @@ return require('packer').startup(function(use)
     
     use 'laytan/cloak.nvim'
 
-     use 'lukas-reineke/indent-blankline.nvim'
+    use 'lukas-reineke/indent-blankline.nvim'
 
     use 'nvim-treesitter/nvim-treesitter'
 
@@ -44,4 +46,6 @@ return require('packer').startup(function(use)
     use 'L3MON4D3/LuaSnip'
     use 'rafamadriz/friendly-snippets'
 
+
+    use 'lewis6991/gitsigns.nvim'
 end)
